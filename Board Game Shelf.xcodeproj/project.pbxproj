@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840E559424659F81005BBA2F /* Board_Game_ShelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E559324659F81005BBA2F /* Board_Game_ShelfUITests.swift */; };
 		8496B525246423ED0057E3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B524246423ED0057E3CE /* AppDelegate.swift */; };
 		8496B527246423ED0057E3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B526246423ED0057E3CE /* SceneDelegate.swift */; };
 		8496B529246423ED0057E3CE /* BoardGameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B528246423ED0057E3CE /* BoardGameList.swift */; };
@@ -39,7 +40,20 @@
 		84FDF27124699C970057F0A0 /* BoardGameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDF27024699C970057F0A0 /* BoardGameDetails.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		840E559624659F81005BBA2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8496B519246423ED0057E3CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8496B520246423ED0057E3CE;
+			remoteInfo = "Board Game Shelf";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		840E559124659F81005BBA2F /* Board Game ShelfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Board Game ShelfUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E559324659F81005BBA2F /* Board_Game_ShelfUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board_Game_ShelfUITests.swift; sourceTree = "<group>"; };
+		840E559524659F81005BBA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8496B521246423ED0057E3CE /* Board Game Shelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board Game Shelf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8496B524246423ED0057E3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8496B526246423ED0057E3CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +89,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		840E558E24659F81005BBA2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8496B51E246423ED0057E3CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,10 +106,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840E559224659F81005BBA2F /* Board Game ShelfUITests */ = {
+			isa = PBXGroup;
+			children = (
+				840E559324659F81005BBA2F /* Board_Game_ShelfUITests.swift */,
+				840E559524659F81005BBA2F /* Info.plist */,
+			);
+			path = "Board Game ShelfUITests";
+			sourceTree = "<group>";
+		};
 		8496B518246423ED0057E3CE = {
 			isa = PBXGroup;
 			children = (
 				8496B523246423ED0057E3CE /* Board Game Shelf */,
+				840E559224659F81005BBA2F /* Board Game ShelfUITests */,
 				8496B522246423ED0057E3CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8496B521246423ED0057E3CE /* Board Game Shelf.app */,
+				840E559124659F81005BBA2F /* Board Game ShelfUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +198,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		840E559024659F81005BBA2F /* Board Game ShelfUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 840E559A24659F81005BBA2F /* Build configuration list for PBXNativeTarget "Board Game ShelfUITests" */;
+			buildPhases = (
+				840E558D24659F81005BBA2F /* Sources */,
+				840E558E24659F81005BBA2F /* Frameworks */,
+				840E558F24659F81005BBA2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				840E559724659F81005BBA2F /* PBXTargetDependency */,
+			);
+			name = "Board Game ShelfUITests";
+			productName = "Board Game ShelfUITests";
+			productReference = 840E559124659F81005BBA2F /* Board Game ShelfUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		8496B520246423ED0057E3CE /* Board Game Shelf */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8496B535246423EE0057E3CE /* Build configuration list for PBXNativeTarget "Board Game Shelf" */;
@@ -193,6 +243,10 @@
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Joe Masilotti";
 				TargetAttributes = {
+					840E559024659F81005BBA2F = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 8496B520246423ED0057E3CE;
+					};
 					8496B520246423ED0057E3CE = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -212,11 +266,19 @@
 			projectRoot = "";
 			targets = (
 				8496B520246423ED0057E3CE /* Board Game Shelf */,
+				840E559024659F81005BBA2F /* Board Game ShelfUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		840E558F24659F81005BBA2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8496B51F246423ED0057E3CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +305,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		840E558D24659F81005BBA2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840E559424659F81005BBA2F /* Board_Game_ShelfUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8496B51D246423ED0057E3CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,6 +336,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		840E559724659F81005BBA2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8496B520246423ED0057E3CE /* Board Game Shelf */;
+			targetProxy = 840E559624659F81005BBA2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		8496B52F246423EE0057E3CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -278,6 +356,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		840E559824659F81005BBA2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Board Game ShelfUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masilotti.Board-Game-ShelfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Board Game Shelf";
+			};
+			name = Debug;
+		};
+		840E559924659F81005BBA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Board Game ShelfUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masilotti.Board-Game-ShelfUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Board Game Shelf";
+			};
+			name = Release;
+		};
 		8496B533246423EE0057E3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +547,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		840E559A24659F81005BBA2F /* Build configuration list for PBXNativeTarget "Board Game ShelfUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				840E559824659F81005BBA2F /* Debug */,
+				840E559924659F81005BBA2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8496B51C246423ED0057E3CE /* Build configuration list for PBXProject "Board Game Shelf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
