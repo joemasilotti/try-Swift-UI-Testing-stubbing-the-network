@@ -9,21 +9,69 @@
 /* Begin PBXBuildFile section */
 		8496B525246423ED0057E3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B524246423ED0057E3CE /* AppDelegate.swift */; };
 		8496B527246423ED0057E3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B526246423ED0057E3CE /* SceneDelegate.swift */; };
-		8496B529246423ED0057E3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B528246423ED0057E3CE /* ContentView.swift */; };
+		8496B529246423ED0057E3CE /* BoardGameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B528246423ED0057E3CE /* BoardGameList.swift */; };
 		8496B52B246423EE0057E3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8496B52A246423EE0057E3CE /* Assets.xcassets */; };
 		8496B52E246423EE0057E3CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8496B52D246423EE0057E3CE /* Preview Assets.xcassets */; };
 		8496B531246423EE0057E3CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8496B52F246423EE0057E3CE /* LaunchScreen.storyboard */; };
+		8496B5392464254E0057E3CE /* BoardGameRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B5382464254E0057E3CE /* BoardGameRow.swift */; };
+		8496B53C246425590057E3CE /* BoardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B53B246425590057E3CE /* BoardGame.swift */; };
+		8496B53E2464273F0057E3CE /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B53D2464273F0057E3CE /* UserData.swift */; };
+		8496B540246427780057E3CE /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B53F246427780057E3CE /* Data.swift */; };
+		8496B543246428650057E3CE /* board-game-data.json in Resources */ = {isa = PBXBuildFile; fileRef = 8496B542246428650057E3CE /* board-game-data.json */; };
+		8496B54524642A810057E3CE /* BoardGameHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B54424642A810057E3CE /* BoardGameHost.swift */; };
+		8496B54724642CA50057E3CE /* carcassonne.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B54624642CA50057E3CE /* carcassonne.jpg */; };
+		8496B54924642CAE0057E3CE /* fox-in-the-forest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B54824642CAE0057E3CE /* fox-in-the-forest.jpg */; };
+		8496B54B24642CBB0057E3CE /* fox-in-the-forest-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B54A24642CBB0057E3CE /* fox-in-the-forest-gameplay.jpg */; };
+		8496B54D24642CCB0057E3CE /* carcassonne-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B54C24642CCB0057E3CE /* carcassonne-gameplay.jpg */; };
+		8496B54F24642F970057E3CE /* hero-realms-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B54E24642F970057E3CE /* hero-realms-gameplay.jpg */; };
+		8496B55124642F9B0057E3CE /* hero-realms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B55024642F9B0057E3CE /* hero-realms.jpg */; };
+		8496B553246430920057E3CE /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B552246430920057E3CE /* CircleImage.swift */; };
+		8496B55524643F390057E3CE /* PlayersText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B55424643F390057E3CE /* PlayersText.swift */; };
+		8496B5592464851A0057E3CE /* tiny-towns-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B5582464851A0057E3CE /* tiny-towns-gameplay.jpg */; };
+		8496B55B2464851F0057E3CE /* tiny-towns.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B55A2464851F0057E3CE /* tiny-towns.jpg */; };
+		8496B55D246486F30057E3CE /* ascension-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B55C246486F30057E3CE /* ascension-gameplay.jpg */; };
+		8496B55F246486F60057E3CE /* ascension.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B55E246486F60057E3CE /* ascension.jpg */; };
+		8496B56124648B960057E3CE /* aeons-end-gameplay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B56024648B960057E3CE /* aeons-end-gameplay.jpg */; };
+		8496B56324648B9A0057E3CE /* aeons-end.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8496B56224648B9A0057E3CE /* aeons-end.jpg */; };
+		8496B56524648C9B0057E3CE /* BoardGameEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B56424648C9B0057E3CE /* BoardGameEditor.swift */; };
+		8496B5672464AE2C0057E3CE /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B5662464AE2C0057E3CE /* TextView.swift */; };
+		84FDF26F246991920057F0A0 /* BoardGameSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDF26E246991920057F0A0 /* BoardGameSummary.swift */; };
+		84FDF27124699C970057F0A0 /* BoardGameDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FDF27024699C970057F0A0 /* BoardGameDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8496B521246423ED0057E3CE /* Board Game Shelf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Board Game Shelf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8496B524246423ED0057E3CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8496B526246423ED0057E3CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8496B528246423ED0057E3CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8496B528246423ED0057E3CE /* BoardGameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameList.swift; sourceTree = "<group>"; };
 		8496B52A246423EE0057E3CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8496B52D246423EE0057E3CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8496B530246423EE0057E3CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8496B532246423EE0057E3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8496B5382464254E0057E3CE /* BoardGameRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameRow.swift; sourceTree = "<group>"; };
+		8496B53B246425590057E3CE /* BoardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGame.swift; sourceTree = "<group>"; };
+		8496B53D2464273F0057E3CE /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		8496B53F246427780057E3CE /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		8496B542246428650057E3CE /* board-game-data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "board-game-data.json"; sourceTree = "<group>"; };
+		8496B54424642A810057E3CE /* BoardGameHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameHost.swift; sourceTree = "<group>"; };
+		8496B54624642CA50057E3CE /* carcassonne.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carcassonne.jpg; sourceTree = "<group>"; };
+		8496B54824642CAE0057E3CE /* fox-in-the-forest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fox-in-the-forest.jpg"; sourceTree = "<group>"; };
+		8496B54A24642CBB0057E3CE /* fox-in-the-forest-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fox-in-the-forest-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B54C24642CCB0057E3CE /* carcassonne-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "carcassonne-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B54E24642F970057E3CE /* hero-realms-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hero-realms-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B55024642F9B0057E3CE /* hero-realms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hero-realms.jpg"; sourceTree = "<group>"; };
+		8496B552246430920057E3CE /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		8496B55424643F390057E3CE /* PlayersText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersText.swift; sourceTree = "<group>"; };
+		8496B5582464851A0057E3CE /* tiny-towns-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tiny-towns-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B55A2464851F0057E3CE /* tiny-towns.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tiny-towns.jpg"; sourceTree = "<group>"; };
+		8496B55C246486F30057E3CE /* ascension-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ascension-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B55E246486F60057E3CE /* ascension.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ascension.jpg; sourceTree = "<group>"; };
+		8496B56024648B960057E3CE /* aeons-end-gameplay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aeons-end-gameplay.jpg"; sourceTree = "<group>"; };
+		8496B56224648B9A0057E3CE /* aeons-end.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aeons-end.jpg"; sourceTree = "<group>"; };
+		8496B56424648C9B0057E3CE /* BoardGameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameEditor.swift; sourceTree = "<group>"; };
+		8496B5662464AE2C0057E3CE /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		84FDF26E246991920057F0A0 /* BoardGameSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameSummary.swift; sourceTree = "<group>"; };
+		84FDF27024699C970057F0A0 /* BoardGameDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardGameDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +104,24 @@
 		8496B523246423ED0057E3CE /* Board Game Shelf */ = {
 			isa = PBXGroup;
 			children = (
-				8496B524246423ED0057E3CE /* AppDelegate.swift */,
-				8496B526246423ED0057E3CE /* SceneDelegate.swift */,
-				8496B528246423ED0057E3CE /* ContentView.swift */,
-				8496B52A246423EE0057E3CE /* Assets.xcassets */,
-				8496B52F246423EE0057E3CE /* LaunchScreen.storyboard */,
-				8496B532246423EE0057E3CE /* Info.plist */,
+				8496B53A246425510057E3CE /* Models */,
 				8496B52C246423EE0057E3CE /* Preview Content */,
+				8496B541246428380057E3CE /* Resources */,
+				8496B52A246423EE0057E3CE /* Assets.xcassets */,
+				8496B524246423ED0057E3CE /* AppDelegate.swift */,
+				84FDF27024699C970057F0A0 /* BoardGameDetails.swift */,
+				8496B56424648C9B0057E3CE /* BoardGameEditor.swift */,
+				8496B54424642A810057E3CE /* BoardGameHost.swift */,
+				8496B528246423ED0057E3CE /* BoardGameList.swift */,
+				8496B5382464254E0057E3CE /* BoardGameRow.swift */,
+				84FDF26E246991920057F0A0 /* BoardGameSummary.swift */,
+				8496B552246430920057E3CE /* CircleImage.swift */,
+				8496B532246423EE0057E3CE /* Info.plist */,
+				8496B52F246423EE0057E3CE /* LaunchScreen.storyboard */,
+				8496B55424643F390057E3CE /* PlayersText.swift */,
+				8496B526246423ED0057E3CE /* SceneDelegate.swift */,
+				8496B5662464AE2C0057E3CE /* TextView.swift */,
+				8496B53D2464273F0057E3CE /* UserData.swift */,
 			);
 			path = "Board Game Shelf";
 			sourceTree = "<group>";
@@ -73,6 +132,35 @@
 				8496B52D246423EE0057E3CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8496B53A246425510057E3CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8496B53B246425590057E3CE /* BoardGame.swift */,
+				8496B53F246427780057E3CE /* Data.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8496B541246428380057E3CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8496B56024648B960057E3CE /* aeons-end-gameplay.jpg */,
+				8496B56224648B9A0057E3CE /* aeons-end.jpg */,
+				8496B55C246486F30057E3CE /* ascension-gameplay.jpg */,
+				8496B55E246486F60057E3CE /* ascension.jpg */,
+				8496B542246428650057E3CE /* board-game-data.json */,
+				8496B54C24642CCB0057E3CE /* carcassonne-gameplay.jpg */,
+				8496B54624642CA50057E3CE /* carcassonne.jpg */,
+				8496B54A24642CBB0057E3CE /* fox-in-the-forest-gameplay.jpg */,
+				8496B54824642CAE0057E3CE /* fox-in-the-forest.jpg */,
+				8496B54E24642F970057E3CE /* hero-realms-gameplay.jpg */,
+				8496B55024642F9B0057E3CE /* hero-realms.jpg */,
+				8496B5582464851A0057E3CE /* tiny-towns-gameplay.jpg */,
+				8496B55A2464851F0057E3CE /* tiny-towns.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,8 +221,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8496B55F246486F60057E3CE /* ascension.jpg in Resources */,
+				8496B55B2464851F0057E3CE /* tiny-towns.jpg in Resources */,
 				8496B531246423EE0057E3CE /* LaunchScreen.storyboard in Resources */,
+				8496B55D246486F30057E3CE /* ascension-gameplay.jpg in Resources */,
 				8496B52E246423EE0057E3CE /* Preview Assets.xcassets in Resources */,
+				8496B543246428650057E3CE /* board-game-data.json in Resources */,
+				8496B56324648B9A0057E3CE /* aeons-end.jpg in Resources */,
+				8496B5592464851A0057E3CE /* tiny-towns-gameplay.jpg in Resources */,
+				8496B54F24642F970057E3CE /* hero-realms-gameplay.jpg in Resources */,
+				8496B54724642CA50057E3CE /* carcassonne.jpg in Resources */,
+				8496B56124648B960057E3CE /* aeons-end-gameplay.jpg in Resources */,
+				8496B54924642CAE0057E3CE /* fox-in-the-forest.jpg in Resources */,
+				8496B54D24642CCB0057E3CE /* carcassonne-gameplay.jpg in Resources */,
+				8496B54B24642CBB0057E3CE /* fox-in-the-forest-gameplay.jpg in Resources */,
+				8496B55124642F9B0057E3CE /* hero-realms.jpg in Resources */,
 				8496B52B246423EE0057E3CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +247,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8496B540246427780057E3CE /* Data.swift in Sources */,
+				84FDF27124699C970057F0A0 /* BoardGameDetails.swift in Sources */,
+				8496B53E2464273F0057E3CE /* UserData.swift in Sources */,
+				8496B54524642A810057E3CE /* BoardGameHost.swift in Sources */,
+				8496B5672464AE2C0057E3CE /* TextView.swift in Sources */,
 				8496B525246423ED0057E3CE /* AppDelegate.swift in Sources */,
+				84FDF26F246991920057F0A0 /* BoardGameSummary.swift in Sources */,
 				8496B527246423ED0057E3CE /* SceneDelegate.swift in Sources */,
-				8496B529246423ED0057E3CE /* ContentView.swift in Sources */,
+				8496B56524648C9B0057E3CE /* BoardGameEditor.swift in Sources */,
+				8496B553246430920057E3CE /* CircleImage.swift in Sources */,
+				8496B53C246425590057E3CE /* BoardGame.swift in Sources */,
+				8496B55524643F390057E3CE /* PlayersText.swift in Sources */,
+				8496B529246423ED0057E3CE /* BoardGameList.swift in Sources */,
+				8496B5392464254E0057E3CE /* BoardGameRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
