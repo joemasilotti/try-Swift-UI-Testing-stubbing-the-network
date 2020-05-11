@@ -3,4 +3,4 @@ Source code for my "UI Testing: an introduction" workshop at the [2020 try Swift
 
 The `master` branch has application code to write tests against.
 
-The `complete` branch includes the UI Tests I'm planning on covering during the workshop.
+The `complete` branch includes the UI Tests I'm planning to cover during the workshop.
