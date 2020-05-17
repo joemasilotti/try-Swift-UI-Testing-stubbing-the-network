@@ -79,7 +79,7 @@ struct BoardGameEditor: View {
 
 struct BoardGameEditor_Previews: PreviewProvider {
     static var previews: some View {
-        BoardGameEditor(boardGame: .constant(boardGameData[0]))
+        BoardGameEditor(boardGame: .constant(BoardGame.preview))
     }
 }
 

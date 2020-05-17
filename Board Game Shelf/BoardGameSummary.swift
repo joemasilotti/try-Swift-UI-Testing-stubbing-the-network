@@ -56,6 +56,6 @@ struct BoardGameSummary: View {
 
 struct BoardGameSummary_Previews: PreviewProvider {
     static var previews: some View {
-        BoardGameSummary(boardGame: boardGameData[0])
+        BoardGameSummary(boardGame: BoardGame.preview)
     }
 }

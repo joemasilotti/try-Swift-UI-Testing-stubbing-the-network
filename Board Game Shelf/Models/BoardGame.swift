@@ -10,7 +10,25 @@ struct BoardGame: Codable, Identifiable {
 
     fileprivate var imageName: String
 
-    static let `default` = Self(id: 0, name: "", minimumPlayers: 1, maximumPlayers: 1, category: .deckBuilding, description: "", imageName: "")
+    init(id: Int, name: String, minimumPlayers: Int, maximumPlayers: Int, category: Category, description: String, imageName: String) {
+        self.id = id
+        self.name = name
+        self.minimumPlayers = minimumPlayers
+        self.maximumPlayers = maximumPlayers
+        self.category = category
+        self.description = description
+        self.imageName = imageName
+    }
+
+    static let `default` = Self(
+        id: 0,
+        name: "",
+        minimumPlayers: 1,
+        maximumPlayers: 1,
+        category: .deckBuilding,
+        description: "",
+        imageName: ""
+    )
 
     enum Category: String, Codable, CaseIterable {
         case deckBuilding = "Deck building"

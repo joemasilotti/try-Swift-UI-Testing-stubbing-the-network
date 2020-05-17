@@ -34,11 +34,7 @@ struct ImageOverlay: View {
 
 struct BoardGameRow_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            BoardGameRow(boardGame: boardGameData[0])
-            BoardGameRow(boardGame: boardGameData[1])
-            BoardGameRow(boardGame: boardGameData[2])
-        }
-        .previewLayout(.fixed(width: 300, height: 200))
+        BoardGameRow(boardGame: BoardGame.preview)
+            .previewLayout(.fixed(width: 300, height: 200))
     }
 }

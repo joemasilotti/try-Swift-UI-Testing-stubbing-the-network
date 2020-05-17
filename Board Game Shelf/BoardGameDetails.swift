@@ -30,7 +30,7 @@ struct BoardGameDetails: View {
 struct BoardGameDetails_Previews: PreviewProvider {
     static var previews: some View {
         BoardGameDetails(
-            boardGame: boardGameData[0],
+            boardGame: BoardGame.preview,
             showingDetails: .constant(true)
         )
     }

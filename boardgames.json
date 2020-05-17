@@ -1,0 +1,20 @@
+[
+    {
+        "id": 198994,
+        "name": "Hero Realms",
+        "minimumPlayers": 2,
+        "maximumPlayers": 4,
+        "imageName": "hero-realms",
+        "category": "Deck building",
+        "description": "Hero Realms is a fantasy-themed deck-building game that is an adaptation of the award-winning Star Realms game. The game includes basic rules for two-player games, along with rules for multiplayer formats such as Free-For-All, Hunter, and Hydra.\n\nEach player starts the game with a ten-card personal deck containing gold (for buying) and weapons (for combat). You start each turn with a new hand of five cards from your personal deck. When your deck runs out of cards, you shuffle your discard pile into your new deck. An 80-card Market deck is shared by all players, with five cards being revealed from that deck to create the Market Row. As you play, you use gold to buy champion cards and action cards from the Market. These champions and actions can generate large amounts of gold, combat, or other powerful effects. You use combat to attack your opponent and their champions. When you reduce your opponent's score (called health) to zero, you win!\n\nMultiple expansions are available for Hero Realms that allow players to start as a particular character (Cleric, Fighter, Ranger, Thief, or Wizard) and fight cooperatively against a Boss, fight Boss decks against one another, or compete in a campaign mode that has you gain experience to work through different levels of missions."
+    },
+    {
+      "id": 69789,
+      "name": "Ascension: Deckbuilding Game",
+      "minimumPlayers": 1,
+      "maximumPlayers": 4,
+      "imageName": "ascension",
+      "category": "Deck building",
+      "description": "Ascension: Deckbuilding Game — originally released as Ascension: Chronicle of the Godslayer — is a fast-paced deck-building game designed by Magic: The Gathering Pro Tour champions Justin Gary, Rob Dougherty, and Brian Kibler, with artwork by Eric Sabee.\n\nAscension is a deck-building game in which players spend Runes to acquire more powerful cards for their deck. It offers a dynamic play experience where players have to react and adjust their strategy accordingly. Each player starts with a small deck of cards, and uses those cards to acquire more and better cards for their deck, with the goal of earning the most Honor Points by gaining cards and defeating monsters."
+    }
+]

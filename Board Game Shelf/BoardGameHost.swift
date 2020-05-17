@@ -46,6 +46,6 @@ struct BoardGameHost: View {
 
 struct BoardGameHost_Previews: PreviewProvider {
     static var previews: some View {
-        BoardGameHost(boardGame: .constant(boardGameData[1]))
+        BoardGameHost(boardGame: .constant(BoardGame.preview))
     }
 }

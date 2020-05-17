@@ -5,7 +5,7 @@ struct BoardGameList: View {
 
     var body: some View {
         NavigationView {
-            ScrollView {
+            ScrollView(.vertical) {
                 VStack(spacing: 0) {
                     ForEach(userData.ids, id: \.self) { id in
                         NavigationLink(
@@ -16,10 +16,13 @@ struct BoardGameList: View {
                         }
                     }
                 }
+                .frame(maxWidth: .infinity)
             }
             .navigationBarTitle(Text("My Shelf"))
         }
-        .onAppear(perform: { self.userData.fetchGames() })
+        .onAppear(perform: {
+            self.userData.fetchGames()
+        })
     }
 }
 
