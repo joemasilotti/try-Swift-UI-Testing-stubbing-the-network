@@ -1,10 +1,5 @@
 import XCTest
 
-struct NetworkStub: Codable {
-    var path: String
-    var response: Data
-}
-
 class Board_Game_ShelfUITests: XCTestCase {
     let app = XCUIApplication()
 
