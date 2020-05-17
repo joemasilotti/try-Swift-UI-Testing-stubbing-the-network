@@ -4,7 +4,11 @@ class UserData: ObservableObject {
     @Published var ids: [Int] = []
     @Published var boardGames: [Int : BoardGame] = [:]
 
-    private let client = HTTPClient()
+    private let client: HTTPClientable
+
+    init(client: HTTPClientable = HTTPClient()) {
+        self.client = client
+    }
 
     func fetchGames() {
         self.client.get("boardgames.json") { data in

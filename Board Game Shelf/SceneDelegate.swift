@@ -6,7 +6,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         let boardGameList = BoardGameList()
-            .environmentObject(UserData())
+            .environmentObject(UserData(client: client))
 
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
@@ -14,5 +14,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+    }
+
+    private var client: HTTPClientable { uiTesting ? fakeHTTPClient : HTTPClient() }
+    private var uiTesting: Bool { ProcessInfo.processInfo.arguments.contains("ui-testing") }
+    private var fakeHTTPClient: HTTPClientable {
+        #if DEBUG
+        return FakeHTTPClient()
+        #else
+        return HTTPClient()
+        #endif
     }
 }

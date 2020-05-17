@@ -2,7 +2,11 @@ import Foundation
 
 typealias HTTPCompletion = (Data?) -> Void
 
-struct HTTPClient {
+protocol HTTPClientable {
+    func get(_ path: String, completion: HTTPCompletion?)
+}
+
+struct HTTPClient: HTTPClientable {
     private let baseURL = URL(string: "https://masilotti.com")!
     private let session = URLSession.shared
 
