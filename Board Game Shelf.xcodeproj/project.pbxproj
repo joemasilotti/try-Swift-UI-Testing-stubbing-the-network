@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		840E559424659F81005BBA2F /* Board_Game_ShelfUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E559324659F81005BBA2F /* Board_Game_ShelfUITests.swift */; };
 		8416B6CC246F0D9A003CAA6C /* BoardGamePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416B6CB246F0D9A003CAA6C /* BoardGamePreview.swift */; };
+		847E77FB2471D02800ECE867 /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 847E77FA2471D02800ECE867 /* Swifter */; };
 		848B33AB246C55F200BEEFEB /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B33AA246C55F200BEEFEB /* HTTPClient.swift */; };
 		8496B525246423ED0057E3CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B524246423ED0057E3CE /* AppDelegate.swift */; };
 		8496B527246423ED0057E3CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8496B526246423ED0057E3CE /* SceneDelegate.swift */; };
@@ -95,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847E77FB2471D02800ECE867 /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +217,9 @@
 				840E559724659F81005BBA2F /* PBXTargetDependency */,
 			);
 			name = "Board Game ShelfUITests";
+			packageProductDependencies = (
+				847E77FA2471D02800ECE867 /* Swifter */,
+			);
 			productName = "Board Game ShelfUITests";
 			productReference = 840E559124659F81005BBA2F /* Board Game ShelfUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -264,6 +269,9 @@
 				Base,
 			);
 			mainGroup = 8496B518246423ED0057E3CE;
+			packageReferences = (
+				847E77F92471D02800ECE867 /* XCRemoteSwiftPackageReference "swifter" */,
+			);
 			productRefGroup = 8496B522246423ED0057E3CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -579,6 +587,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		847E77F92471D02800ECE867 /* XCRemoteSwiftPackageReference "swifter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/httpswift/swifter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		847E77FA2471D02800ECE867 /* Swifter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 847E77F92471D02800ECE867 /* XCRemoteSwiftPackageReference "swifter" */;
+			productName = Swifter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8496B519246423ED0057E3CE /* Project object */;
 }
