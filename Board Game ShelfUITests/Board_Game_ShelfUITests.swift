@@ -5,8 +5,6 @@ class Board_Game_ShelfUITests: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
-
-
         app.launch()
     }
 
@@ -15,5 +13,4 @@ class Board_Game_ShelfUITests: XCTestCase {
         app.buttons["Tiny Towns"].tap()
         XCTAssert(app.navigationBars.staticTexts["Tiny Towns"].exists)
     }
-
 }
